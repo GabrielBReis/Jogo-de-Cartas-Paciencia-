@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "cartas.h": "c",
+        "listase.h": "c",
+        "listade.h": "c",
+        "struct.h": "c"
+    }
+}

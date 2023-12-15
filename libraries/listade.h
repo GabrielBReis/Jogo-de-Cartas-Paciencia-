@@ -4,8 +4,9 @@
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "pilhac.h"
+#include "pilhaC.h"
 #include "struct.h"
+
 
 typedef tp_cartas tp_item; // tp_item passa a representar a estrutura tp_cartas. Ajuda na intercomunicação das bibliotecas.
 

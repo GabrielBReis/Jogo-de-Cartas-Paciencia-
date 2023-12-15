@@ -1,11 +1,9 @@
 #ifndef PILHA_H
 #define PILHA_H
-
 #include <stdio.h>
 #include <windows.h>
 #include <conio.h>
 #include "struct.h"
-
 #define MAX 100
 
 void setcolor(int ForgC) { 

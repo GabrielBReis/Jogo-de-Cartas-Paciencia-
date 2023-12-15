@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "pilhac.h"
-#include "listase.h"
-#include "listade.h"
+#include "pilhaC.h"
+#include "listaSE.h"
+#include "listaDE.h"
 #include "struct.h"
 // \x03 copas
 // \x04 ouros

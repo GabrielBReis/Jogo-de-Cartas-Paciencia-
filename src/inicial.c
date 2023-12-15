@@ -1,29 +1,27 @@
-#include <stdio.h>
-#include <windows.h>
-#include <stdlib.h>
-#include "cartas.h"
-#include "listase.h"
-#include "listade.h"
-#include "struct.h"
+#include "../libraries/common.h"
 
 int main(){
-    tp_pilha monte, cava; // cria cava e monte de cartas
-    int choice,i;
+
+    int choice, i, m_n, m_e, q_cartas, cont;
+    tp_item e;
+    tp_pilha monte, cava, mfinal[4]; // cria cava e monte de cartas
+    tp_listad *tabu[7]; // cria as listas que vai se construir o jogo
+
     inicializar_pilha(&monte); //inicializa a pilha que vai guardar as cartas viradas
     inicializar_pilha(&cava); // inicializar a pilha que vai guardar todas as cartas
     criar_cartas(&cava); //criando as cartas
+    
     system("color 20"); // cor do mesa
-    tp_listad *tabu[7]; // cria as listas que vai se construir o jogo
+    
     for( i = 0 ; i < 7 ; i++){
         tabu[i] = inicializa_listad();//inicializa as listas
     }
-    tp_pilha mfinal[4];
+
     for(i = 0 ; i < 4 ; i++){
         inicializar_pilha(&mfinal[i]); // criação dos montes finais de cada nipe
     }
     distribui_cartas(tabu,&cava); //funcao que distribui as cartas iniciais do tabuleiro, visiveis e invisiveis
-    int m_n,m_e,q_cartas, cont;
-    tp_item e;
+    
     while(1){
         imprime_tabuleiro(tabu,&monte,&cava,mfinal); // imprime o tabuleiro, as listas, montes finais, monte e cava
         printf("Movimento: "); //pede um movimento do usuario

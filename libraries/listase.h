@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "pilhac.h"
+#include "pilhaC.h"
 #include "struct.h"
 
 /* Fora a mudança da estrutura representada pelo tp_item, não houve nenhuma mudança
